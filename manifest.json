@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Wikipedia zu Wikiwand Redirector",
+  "version": "0.1",
+  "description": "Leitet Wikipedia-Links zu Wikiwand um.",
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
