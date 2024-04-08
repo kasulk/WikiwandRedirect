@@ -8,10 +8,12 @@ function redirectWikipediaToWikiwand(
   details: RequestDetails
 ): { redirectUrl: string } | void {
   const url = new URL(details.url);
-  const [languageCode] = url.hostname.split(".");
+  console.log("url:", url);
 
   if (url.hostname.includes("wikipedia.org")) {
-    const newUrl = `https://www.wikiwand.com/${languageCode}/${url.pathname}`;
+    const [languageCode] = url.hostname.split(".");
+    const newPath = url.pathname.replace("/wiki/", "");
+    const newUrl = `https://www.wikiwand.com/${languageCode}/${newPath}`;
     return { redirectUrl: newUrl };
   }
 }

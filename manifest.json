@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Wikipedia zu Wikiwand Redirector",
-  "version": "0.1",
-  "description": "Leitet Wikipedia-Links zu Wikiwand um.",
+  "name": "Wikiwand Redirect",
+  "version": "0.1.0",
+  "description": "Simple Open Source Wikipedia to Wikiwand Redirector. Just redirects your clicks on links to Wikipedia articles to Wikiwand. Source code: https://github.com/kasulk/WikiwandRedirect",
   "icons": {
     "48": "icons/icon-48.png"
   },
